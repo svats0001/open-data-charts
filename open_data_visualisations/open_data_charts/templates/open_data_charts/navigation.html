@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'open_data_charts/navStyle.css' %}">
+
+<div class="topnav">
+    <a class="active" href="/open_data_charts/">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            {% for category in categories %}
+                <a href="/open_data_charts/{{category.cat_name}}/">{{category.cat_name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'open_data_charts/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'open_data_charts/navStyle.css' %}">
+
+<div class="topnav">
+    <a class="active" href="/open_data_charts/">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            {% for category in categories_charts.categories %}
+                <a href="/open_data_charts/{{category.cat_name}}/">{{category.cat_name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="search-dropdown">
+    <div class="search-form">
+    <form method="GET" action="">
+    <input type="search" name="search" id="chart-search">
+    <button type="submit" id="search-btn"> Search </button>
+    </form>
+      <div class="search-dropdown-content">
+          {% for chart in categories_charts.charts %}
+              <a href="/open_data_charts/{{chart.chart_category}}/{{chart.chart_id}}">{{chart.chart_title}}</a>
+          {% endfor %}
+      </div>
+  </div>
+    </div>
+</div> 
+
+<body>
+<h2>Welcome to Open Data Charts</h2>
+
+<h3>All categories: </h3>
+
+{% if categories_charts.categories %}
+<div>
+    <ul id="categories-holder">
+        {% for category in categories_charts.categories %}
+            {% if forloop.counter >= 1 and forloop.counter <= 5 %}
+            <li class="categories-col1">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% elif forloop.counter > 5 and forloop.counter <= 10 %}
+            <li class="categories-col2">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% elif forloop.counter > 10 and forloop.counter <= 15 %}
+            <li class="categories-col3">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% elif forloop.counter > 15 and forloop.counter <= 20 %}
+            <li class="categories-col4">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% elif forloop.counter > 20 and forloop.counter <= 25 %}
+            <li class="categories-col5">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% elif forloop.counter > 25 and forloop.counter <= 30 %}
+            <li class="categories-col6">
+                <a href="{% url 'open_data_charts:category' category.cat_name %}">{{category.cat_name}}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% else %}
+    <p>No categories currently available</p>
+{% endif %}
+
+<h3>Recently added charts: </h3>
+
+{% if categories_charts.recent_charts %}
+    <ul>
+        {% for chart in categories_charts.recent_charts %}
+            <li>
+                <a href="{% url 'open_data_charts:chart' chart.chart_category chart.chart_id %}">{{chart.chart_title}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> 
+        No charts currently available
+    </p>
+{% endif %}
+</body>
