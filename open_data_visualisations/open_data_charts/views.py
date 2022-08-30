@@ -1,6 +1,7 @@
 from django.views import generic
 from django.utils import timezone
 from django.templatetags.static import static
+from django.http import Http404
 
 from .models import Chart, Category
 
@@ -21,14 +22,14 @@ class CategoryView(generic.ListView):
     context_object_name = 'chart_list'
 
     def get_queryset(self):
+        specific_category = Category.objects.filter(cat_name=self.kwargs['cat'])
+        if len(specific_category) == 0:
+            raise Http404
         query = self.request.GET.get('search')
         result = Chart.objects.all()
         if query:
             result = Chart.objects.filter(chart_title__contains=query)
-        try:
-            return {'categories': Category.objects.all(), 'specific_category': Category.objects.filter(cat_name=self.kwargs['cat'])[0], 'charts': result}
-        except:
-            return {'categories': Category.objects.all(), 'specific_category': Category.objects.filter(cat_name=self.kwargs['cat']), 'charts': result}
+        return {'categories': Category.objects.all(), 'specific_category': specific_category[0], 'charts': result}
 
 class ChartView(generic.DetailView):
     model = Chart
@@ -38,6 +39,13 @@ class ChartView(generic.DetailView):
         return Chart.objects.filter(chart_creation_date__lte = timezone.now())
 
     def get_context_data(self, **kwargs):
+        specific_category = Category.objects.filter(cat_name=self.kwargs['cat'])
+        if len(specific_category) == 0:
+            raise Http404
+        else:
+            specific_chart = Chart.objects.filter(chart_category=specific_category[0].cat_id, chart_id=self.kwargs['pk'])
+            if len(specific_chart) == 0:
+                raise Http404
         query = self.request.GET.get('search')
         result = Chart.objects.all()
         if query:
