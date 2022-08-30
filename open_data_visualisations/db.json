@@ -1,0 +1,1308 @@
+[
+{
+    "model": "open_data_charts.category",
+    "pk": 1,
+    "fields": {
+        "cat_name": "Utilities"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 2,
+    "fields": {
+        "cat_name": "Climate"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 3,
+    "fields": {
+        "cat_name": "Animals"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 4,
+    "fields": {
+        "cat_name": "Health"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 5,
+    "fields": {
+        "cat_name": "Local government"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 6,
+    "fields": {
+        "cat_name": "Geology"
+    }
+},
+{
+    "model": "open_data_charts.category",
+    "pk": 7,
+    "fields": {
+        "cat_name": "Education"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 1,
+    "fields": {
+        "chart_title": "Wastewater Inlet - Daily Raw Water Quality - Eastern Treatment Plant",
+        "chart_category": 1,
+        "chart_description": "Concentrations of various chemicals in wastewater at the Eastern Treatment Plant in Melbourne, Australia",
+        "chart_creation_date": "2022-08-09T00:01:39Z",
+        "chart_filename": "open_data_charts/etp_lists.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 2,
+    "fields": {
+        "chart_title": "Water Supply - Storage dams operated by Melbourne Water",
+        "chart_category": 1,
+        "chart_description": "Daily volume of water observed for storage dams operated by Melbourne Water",
+        "chart_creation_date": "2022-08-11T04:13:29Z",
+        "chart_filename": "open_data_charts/dams.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 3,
+    "fields": {
+        "chart_title": "Ballarat climate observations",
+        "chart_category": 2,
+        "chart_description": "Observations of humidity and wind from sensors located around Ballarat",
+        "chart_creation_date": "2022-08-15T10:48:12Z",
+        "chart_filename": "open_data_charts/ballarat.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 4,
+    "fields": {
+        "chart_title": "Melbourne Wastewater - Daily Volume Received by Melbourne Water",
+        "chart_category": 1,
+        "chart_description": "Daily accumulated inflow and outflow volumes for wastewater treatment at the two Melbourne water sites (Eastern and Western)",
+        "chart_creation_date": "2022-08-16T01:52:30Z",
+        "chart_filename": "open_data_charts/wastewater_volume.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 5,
+    "fields": {
+        "chart_title": "Ballarat Annual Animal Registrations by Suburb",
+        "chart_category": 3,
+        "chart_description": "The number of animal registrations observed each year in each suburb in the City of Ballarat",
+        "chart_creation_date": "2022-08-16T06:10:30Z",
+        "chart_filename": "open_data_charts/animal_registrations.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 6,
+    "fields": {
+        "chart_title": "All Victorian RAT SARS-CoV-2 cases",
+        "chart_category": 4,
+        "chart_description": "Total number of active Coronavirus cases as measured by Rapid Antigen Tests (RATs) in Victoria, Australia",
+        "chart_creation_date": "2022-08-16T10:06:59Z",
+        "chart_filename": "open_data_charts/rat_cases.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 7,
+    "fields": {
+        "chart_title": "Ballarat Parking Transactions",
+        "chart_category": 5,
+        "chart_description": "The number of parking transactions that occurred in Ballarat's car parking zones, by cost and payment channel",
+        "chart_creation_date": "2022-08-17T07:35:06Z",
+        "chart_filename": "open_data_charts/parking.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 8,
+    "fields": {
+        "chart_title": "Carbon Emissions",
+        "chart_category": 2,
+        "chart_description": "Carbon Dioxide emissions from various locations",
+        "chart_creation_date": "2022-08-18T01:41:00Z",
+        "chart_filename": "open_data_charts/emissions.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 9,
+    "fields": {
+        "chart_title": "Lake Wendouree Level",
+        "chart_category": 6,
+        "chart_description": "The water level of Lake Wendouree referenced from the full level",
+        "chart_creation_date": "2022-08-18T06:56:28Z",
+        "chart_filename": "open_data_charts/wendouree.json"
+    }
+},
+{
+    "model": "open_data_charts.chart",
+    "pk": 10,
+    "fields": {
+        "chart_title": "Government School LBOTE students by English spoken at home, Victoria",
+        "chart_category": 7,
+        "chart_description": "Number of students in government schools in Victoria, Australia who have a Language Background Other Than English (LBOTE), divided into three categories: a) Students language background other than English-Speak mainly English at home; b) Students language background other than English-Does not speak mainly English at home; and c) Total students language background other than English",
+        "chart_creation_date": "2022-08-18T08:17:03Z",
+        "chart_filename": "open_data_charts/student_english.json"
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 1,
+    "fields": {
+        "subject": "Ammonia",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 2,
+    "fields": {
+        "subject": "Biochemical Oxygen Demand",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 3,
+    "fields": {
+        "subject": "Chemical Oxygen Demand",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 4,
+    "fields": {
+        "subject": "Nitrate plus Nitrite",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 5,
+    "fields": {
+        "subject": "Nitrogen",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 6,
+    "fields": {
+        "subject": "Cardinia",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 7,
+    "fields": {
+        "subject": "Greenvale",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 8,
+    "fields": {
+        "subject": "Maroondah",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 9,
+    "fields": {
+        "subject": "O'Shannassy",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 10,
+    "fields": {
+        "subject": "Silvan",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 11,
+    "fields": {
+        "subject": "Sugarloaf",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 12,
+    "fields": {
+        "subject": "Tarago",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 13,
+    "fields": {
+        "subject": "Thomson",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 14,
+    "fields": {
+        "subject": "Upper Yarra",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 15,
+    "fields": {
+        "subject": "Yan Yean",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 16,
+    "fields": {
+        "subject": "Ballarat",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 17,
+    "fields": {
+        "subject": "Eastern Treatment Plant",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 18,
+    "fields": {
+        "subject": "Western Treatment Plant",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 19,
+    "fields": {
+        "subject": "Addington",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 20,
+    "fields": {
+        "subject": "Alfredton",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 21,
+    "fields": {
+        "subject": "Ascot",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 22,
+    "fields": {
+        "subject": "Bakery Hill",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 23,
+    "fields": {
+        "subject": "Bald Hills",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 24,
+    "fields": {
+        "subject": "Ballarat Central",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 25,
+    "fields": {
+        "subject": "Ballarat East",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 26,
+    "fields": {
+        "subject": "Ballarat North",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 27,
+    "fields": {
+        "subject": "Black Hill",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 28,
+    "fields": {
+        "subject": "Blowhard",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 29,
+    "fields": {
+        "subject": "Bo Peep",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 30,
+    "fields": {
+        "subject": "Bonshaw",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 31,
+    "fields": {
+        "subject": "Brown Hill",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 32,
+    "fields": {
+        "subject": "Buninyong",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 33,
+    "fields": {
+        "subject": "Bunkers Hill",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 34,
+    "fields": {
+        "subject": "Burrumbeet",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 35,
+    "fields": {
+        "subject": "Canadian",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 36,
+    "fields": {
+        "subject": "Cardigan",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 37,
+    "fields": {
+        "subject": "Cardigan Village",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 38,
+    "fields": {
+        "subject": "Coghills Creek",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 39,
+    "fields": {
+        "subject": "Creswick",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 40,
+    "fields": {
+        "subject": "Delacombe",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 41,
+    "fields": {
+        "subject": "Durham Lead",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 42,
+    "fields": {
+        "subject": "Ercildoune",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 43,
+    "fields": {
+        "subject": "Eureka",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 44,
+    "fields": {
+        "subject": "Glen Park",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 45,
+    "fields": {
+        "subject": "Glendaruel",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 46,
+    "fields": {
+        "subject": "Golden Point",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 47,
+    "fields": {
+        "subject": "Invermay",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 48,
+    "fields": {
+        "subject": "Invermay Park",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 49,
+    "fields": {
+        "subject": "Lake Gardens",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 50,
+    "fields": {
+        "subject": "Lake Wendouree",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 51,
+    "fields": {
+        "subject": "Learmonth",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 52,
+    "fields": {
+        "subject": "Lucas",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 53,
+    "fields": {
+        "subject": "Magpie",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 54,
+    "fields": {
+        "subject": "Miners Rest",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 55,
+    "fields": {
+        "subject": "Mitchell Park",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 56,
+    "fields": {
+        "subject": "Mount Bolton",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 57,
+    "fields": {
+        "subject": "Mount Clear",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 58,
+    "fields": {
+        "subject": "Mount Helen",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 59,
+    "fields": {
+        "subject": "Mount Pleasant",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 60,
+    "fields": {
+        "subject": "Mount Rowan",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 61,
+    "fields": {
+        "subject": "Nerrina",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 62,
+    "fields": {
+        "subject": "Newington",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 63,
+    "fields": {
+        "subject": "Redan",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 64,
+    "fields": {
+        "subject": "Scotchmans Lead",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 65,
+    "fields": {
+        "subject": "Scotsburn",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 66,
+    "fields": {
+        "subject": "Sebastopol",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 67,
+    "fields": {
+        "subject": "Smythes Creek",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 68,
+    "fields": {
+        "subject": "Soldiers Hill",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 69,
+    "fields": {
+        "subject": "Sulky",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 70,
+    "fields": {
+        "subject": "Tourello",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 71,
+    "fields": {
+        "subject": "Warrenheip",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 72,
+    "fields": {
+        "subject": "Wattle Flat",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 73,
+    "fields": {
+        "subject": "Waubra",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 74,
+    "fields": {
+        "subject": "Weatherboard",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 75,
+    "fields": {
+        "subject": "Wendouree",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 76,
+    "fields": {
+        "subject": "Windermere",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 77,
+    "fields": {
+        "subject": "Winter Valley",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 78,
+    "fields": {
+        "subject": "Ross Creek",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 79,
+    "fields": {
+        "subject": "Gong Gong",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 80,
+    "fields": {
+        "subject": "Victoria",
+        "chart": 6
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 81,
+    "fields": {
+        "subject": "Paid App",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 82,
+    "fields": {
+        "subject": "Paid Card",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 83,
+    "fields": {
+        "subject": "Paid Coin",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 84,
+    "fields": {
+        "subject": "Free Meter",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 85,
+    "fields": {
+        "subject": "Free App",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 86,
+    "fields": {
+        "subject": "Total",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 87,
+    "fields": {
+        "subject": "Ballarat",
+        "chart": 8
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 88,
+    "fields": {
+        "subject": "Lake Wendouree",
+        "chart": 9
+    }
+},
+{
+    "model": "open_data_charts.chartsubject",
+    "pk": 89,
+    "fields": {
+        "subject": "Government Schools",
+        "chart": 10
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 1,
+    "fields": {
+        "measure": "Concentration",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 2,
+    "fields": {
+        "measure": "Volume percent full",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 3,
+    "fields": {
+        "measure": "Volume megalitres",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 4,
+    "fields": {
+        "measure": "Relative humidity",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 5,
+    "fields": {
+        "measure": "Average wind speed",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 6,
+    "fields": {
+        "measure": "Gust speed",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 7,
+    "fields": {
+        "measure": "Daily Inflow Volume",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 8,
+    "fields": {
+        "measure": "Cat count",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 9,
+    "fields": {
+        "measure": "Dog count",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 10,
+    "fields": {
+        "measure": "Vapour pressure",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 11,
+    "fields": {
+        "measure": "Atmospheric pressure",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 12,
+    "fields": {
+        "measure": "Total cases",
+        "chart": 6
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 13,
+    "fields": {
+        "measure": "Air temperature",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 14,
+    "fields": {
+        "measure": "Transactions",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 15,
+    "fields": {
+        "measure": "Rainfall",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 16,
+    "fields": {
+        "measure": "Particulate Matter 1",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 17,
+    "fields": {
+        "measure": "Particulate Matter 2.5",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 18,
+    "fields": {
+        "measure": "Particulate Matter 10",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 19,
+    "fields": {
+        "measure": "Ozone",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 20,
+    "fields": {
+        "measure": "Nitrogen Dioxide",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 21,
+    "fields": {
+        "measure": "Carbon Monoxide",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 22,
+    "fields": {
+        "measure": "Outflow Volume Rate",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 23,
+    "fields": {
+        "measure": "Carbon emissions",
+        "chart": 8
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 24,
+    "fields": {
+        "measure": "Streamflow",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 25,
+    "fields": {
+        "measure": "Water level",
+        "chart": 9
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 26,
+    "fields": {
+        "measure": "Precipitation",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 27,
+    "fields": {
+        "measure": "Cumulative Precipitation",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 28,
+    "fields": {
+        "measure": "LBOTE - speak mainly English at home",
+        "chart": 10
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 29,
+    "fields": {
+        "measure": "LBOTE - doesn't speak mainly English at home",
+        "chart": 10
+    }
+},
+{
+    "model": "open_data_charts.chartmeasure",
+    "pk": 30,
+    "fields": {
+        "measure": "Total LBOTE",
+        "chart": 10
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 1,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/humidity-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 2,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/wind-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 3,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/wastewater-inlet-daily-raw-water-quality-eastern-treatment-plant-etp2",
+        "chart": 1
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 4,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/water-supply-daily-volume-observed-for-storage-dams-operated-by-melbourne-water2",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 5,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/melbourne-wastewater-daily-volume-received-by-melbourne-water2",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 6,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/annual-animal-registrations-by-suburb",
+        "chart": 5
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 7,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/air-pressure-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 8,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/all-victorian-rat-sars-cov-2-cases-by-local-government-area-postcode",
+        "chart": 6
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 9,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/air-temperature-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 10,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/parking-transactions",
+        "chart": 7
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 11,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/water-supply-daily-rainfall-at-the-4-major-harvesting-storage-dams2",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 12,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/air-quality-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 13,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/wastewater-outlet-hourly-flow-eastern-treatment-plant-etp2",
+        "chart": 4
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 14,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/council-emissions",
+        "chart": 8
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 15,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/water-supply-daily-streamflow-into-melbournes-4-major-harvesting-storage-dams2",
+        "chart": 2
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 16,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/lake-wendouree-level",
+        "chart": 9
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 17,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/precipitation-observations",
+        "chart": 3
+    }
+},
+{
+    "model": "open_data_charts.charturl",
+    "pk": 18,
+    "fields": {
+        "url": "https://discover.data.vic.gov.au/dataset/government-school-lbote-students-by-english-spoken-at-home",
+        "chart": 10
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$6KD087ngbk3OVTvn2Gt2Hu$9L/4zFTkmFlykIjy7KIbUpGJU3LtL6eGOFpuEo//8p4=",
+        "last_login": "2022-05-24T05:11:31.667Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "uncoemail32@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-19T00:46:25.843Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "02th3wvvw0xj8ptzjdat7g3ai3glilrz",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFleFWX7v0GMsOAVA0kpV0Z_92QdKHbe865bxFw30rYe1rDwuIilDj9boTxmeoA_MB6bzK2uq0LyaHIg3Z5a5xe18P9OyjYy6gNzZMGdGyt1mCMzYk8OZeRz8p6i5GBHRN41JTBKwSYEONMNvvkxOcL5Sc4UA:1ntMpP:mFLI-1xhh4KlVWfJU5DH9g3FmpsfH_aP8nitJNL_FZ4",
+        "expire_date": "2022-06-07T05:11:31.683Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tvnqyij5sr596syc5gc1hbt75jwnozs7",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFleFWX7v0GMsOAVA0kpV0Z_92QdKHbe865bxFw30rYe1rDwuIilDj9boTxmeoA_MB6bzK2uq0LyaHIg3Z5a5xe18P9OyjYy6gNzZMGdGyt1mCMzYk8OZeRz8p6i5GBHRN41JTBKwSYEONMNvvkxOcL5Sc4UA:1nrULt:0ES4PraoXXUyisqdKtA0FzmoP_0nwxlhWLd3Mbq0pC8",
+        "expire_date": "2022-06-02T00:49:17.529Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-05-19T01:44:53.850Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "open_data_charts",
+            "chart"
+        ],
+        "object_id": "1",
+        "object_repr": "Wastewater Inlet - Daily Raw Water Quality - Eastern Treatment Plant (ETP) - Ammonia concentration",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chart title\"]}}]"
+    }
+}
+]
