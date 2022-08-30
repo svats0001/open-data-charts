@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script>
+    var base_lists = '{{static_url}}';
+</script>
+<script type="module" src="{% static 'open_data_charts/etp_pick_source.js' %}"></script>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{% static 'open_data_charts/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'open_data_charts/navStyle.css' %}">
+
+<div class="topnav">
+    <a class="active" href="/open_data_charts/">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            {% for category in categories %}
+                <a href="/open_data_charts/{{category.cat_name}}/">{{category.cat_name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="search-dropdown">
+    <div class="search-form">
+    <form method="GET" action="">
+    <input type="search" name="search" id="chart-search">
+    <button type="submit" id="search-btn"> Search </button>
+    </form>
+      <div class="search-dropdown-content">
+          {% for chart in charts %}
+              <a href="/open_data_charts/{{chart.chart_category}}/{{chart.chart_id}}">{{chart.chart_title}}</a>
+          {% endfor %}
+      </div>
+  </div>
+    </div>
+</div>
+
+<body>
+    <br><a id="back-link" onclick="history.back()">&lt; Back</a><br>
+
+    <h2 id="chart-title">{{chart.chart_title}} &nbsp; <img id="title-loading" src="{% static 'open_data_charts/images/ZKZg.gif' %}"></h2>
+
+    {% if chart.chartsubject_set %}
+    <div id="subject-dropdown">
+    <label>Subject: </label>&nbsp;&nbsp;
+    <select id="subject-options" disabled>
+        <option value="" selected disabled></option>
+        {% for chartsubject in chart.chartsubject_set.all %}
+        <option value="{{chartsubject.subject}}">{{chartsubject.subject}}</option>
+        {% endfor %}
+    </select>&nbsp;
+    <img id="subject-loading" src="{% static 'open_data_charts/images/ZKZg.gif' %}"> 
+    </div>
+    {% endif %}
+
+    {% if chart.chartmeasure_set %}
+    <div id="measure-dropdown">
+        <label>Measure: </label>&nbsp;&nbsp;
+        <select id="measure-options" disabled>
+            {% for chartmeasure in chart.chartmeasure_set.all %}
+            {% if forloop.first %}
+            <option value="{{chartmeasure.measure}}" selected>{{chartmeasure.measure}}</option>
+            {% else %}
+            <option value="{{chartmeasure.measure}}">{{chartmeasure.measure}}</option>
+            {% endif %}
+            {% endfor %}
+        </select>&nbsp;
+        <img id="measure-loading" src="{% static 'open_data_charts/images/ZKZg.gif' %}">
+        </div>
+    {% endif %}
+
+    <div id="timeframes">
+    <label>Timeframe: </label>
+    <input type="radio" id="weekChoice" name="timeChoice" value="Week" disabled>
+    <label for="weekChoice">1W</label>
+    <input type="radio" id="monthChoice" name="timeChoice" value="Month" disabled>
+    <label for="monthChoice">1M</label>
+    <input type="radio" id="yearChoice" name="timeChoice" value="Year" disabled>
+    <label for="yearChoice">1Y</label>
+    <input type="radio" id="fiveyearChoice" name="timeChoice" value="FiveYears" disabled>
+    <label for="fiveyearChoice">5Y</label>
+    <input type="radio" id="allChoice" name="timeChoice" value="All" checked disabled>
+    <label for="allChoice">All</label>&nbsp;
+    <img id="timeframe-loading" src="{% static 'open_data_charts/images/ZKZg.gif' %}">
+</div>
+    <br><p id="selectSubjectLabel">Select a subject</p><br id="subjectBreak">
+
+    <div id="chartHolder">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <div id="chartDesc">
+        <p>{{chart.chart_description}}</p>
+        {% if chart.charturl_set %}
+        <p>Source:
+            {% for url in chart.charturl_set.all %}
+            {% if forloop.counter == 1 %}
+            <a href={{url}} target="_blank">{{url}}</a><br>
+            {% else %}
+            <a href={{url}} target="_blank" class="url">{{url}}</a><br>
+            {% endif %}
+            {% endfor %}
+        </p>
+        {% endif %}
+    </div>
+</body>
